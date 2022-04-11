@@ -7,7 +7,7 @@ the standard instrument for creating APIs with Django, and for the second, with 
 
 The minimal requirements are:
 * Install the latest version for Python3.
-* Text Editor. Recommend, if you are just starting, PyCharm Community Edition o VSCode with Python plugin.
+* Text Editor. If you are just starting, recommend PyCharm Community Edition o VSCode with Python plugin.
 * Access to a terminal (which exists in PyCharm).
 
 The purposes which should be reached are fundamental for every API(examples):
