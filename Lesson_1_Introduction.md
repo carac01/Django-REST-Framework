@@ -143,7 +143,7 @@ curl https://example-of-crud-in-django-jrf.herokuapp.com/ping/
 {"ping": "pong!"}
 ```
 
-If you get lost on any step, do not hesitate to consult or download the code which was placed in GtHub repository:
+If you get lost on any step, do not hesitate to consult or download the code which was placed in GitHub repository:
 https://github.com/tanrax/example-of-crud-in-django-with-rest-framework
 
 Are you ready? Let's begin!
