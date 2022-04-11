@@ -1,0 +1,8 @@
+django
+djangorestframework
+# Instrument for testing
+pytest
+# Integration with Django
+pytest-django
+# Generator of the test data
+Faker
