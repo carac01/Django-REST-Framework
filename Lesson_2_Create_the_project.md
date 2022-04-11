@@ -1,4 +1,6 @@
-### Let's create the virtual environment and activate it
+### Create the project
+
+Let's create the virtual environment and activate it
 
 ```commandline
 python3 -m venv venv
