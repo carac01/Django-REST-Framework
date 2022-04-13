@@ -1,8 +1,10 @@
-django
-djangorestframework
+django~=2.2.16
+djangorestframework~=3.12.4
 # Instrument for testing
-pytest
+pytest~=6.2.4
 # Integration with Django
 pytest-django
 # Generator of the test data
-Faker
+Faker~=8.10.1
+
+python-dotenv~=0.19.0
