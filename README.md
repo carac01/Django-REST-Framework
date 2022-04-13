@@ -1,7 +1,7 @@
 # Django-REST-Framework
 
 ### Description
-The project is an english version of spanish web course https://programadorwebvalencia.com/cursos/django-rest-framework/ .
+The project is an english version of spanish web course https://programadorwebvalencia.com/cursos/django-rest-framework/introducci%C3%B3n/ .
 Not a literal translation, supplemented, modified.
 Author of original text is Andros Fenollosa.
 The original text is under the https://creativecommons.org/licenses/by-nc-nd/4.0/

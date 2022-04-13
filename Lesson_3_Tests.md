@@ -7,7 +7,7 @@ We create the file _pytest.ini_ in a main dir of our project with the next conte
 [pytest]
 DJANGO_SETTINGS_MODULE = proyecto.settings
 
-# Opcional, pero recomendado
+# Optional, but recommended
 python_files = tests.py test_*.py *_tests.py
 ```
 
@@ -17,8 +17,8 @@ Finally, inside _books_ create the file with the name _test_example.py_.
 
 ```commandline
 tests
-    └── libros
-            └── test_ejemplo.py
+    └── books
+            └── test_example.py
 ```
 
 By the default, _pytest_ finds the files with the _test_ in file name.
