@@ -1,8 +1,8 @@
 ### Simple GET
 
-In the current lesson we will not use Django REST Framework, but _Django only_.
+In the current lesson we will not use [Django REST Framework](https://www.django-rest-framework.org/), but _Django only_.
 Let's create the classic ping-pong to check that the service is alive.
-Realise the function view with response:
+Realise the function [view](books/views.py) with response:
 
 ```python
 # books/views.py
@@ -14,7 +14,7 @@ def ping(request):
     return JsonResponse(data)
 ```
 
-Add the route:
+Add the route to [urls.py](proyecto/urls.py):
 
 ```python
 # proyecto/urls.py

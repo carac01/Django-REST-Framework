@@ -7,10 +7,10 @@ Author of original text is [_**Andros Fenollosa Hurtado**_](https://soy.andros.d
 The original text is under the [licenses](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 ### Content
- 1. Introduction.
- 2. Create the project.
- 3. Testing.
- 4. Simple GET.
+ 1. [Introduction](Lesson_1_Introduction.md).
+ 2. [Create the project](Lesson_2_Create_the_project.md).
+ 3. [Testing](Lesson_3_Tests.md).
+ 4. [Simple GET](Lesson_4_Simple_GET.md).
  5. Hello DRF.
  6. Create.
  7. Details.

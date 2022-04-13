@@ -7,7 +7,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-Now we create the file with txt extension and call it requirements.txt
+Now we create the file with txt extension and call it [requirements.txt](requirements.txt)
 This will be the place where we identify the dependencies (libraries) for installation.
 
 ```commandline
@@ -27,18 +27,18 @@ Let's install the dependencies.
 pip3 install -r requirements.txt
 ```
 
-Now we are creating our project with the name _proyecto_.
+Now we are creating our project with the name [_proyecto_](proyecto).
 
 ```commandline
 django-admin startproject proyecto .
 ```
 
-Inside the project we may have a lot of applications. At the moment create _books_.
+Inside the project we may have a lot of applications. At the moment create [_books_](books).
 
 ```commandline
 python manage.py startapp books
 ```
-Add _books_ into the configuration INSTALLED_APPS in a file _proyecto/settings.py_:
+Add _books_ into the configuration INSTALLED_APPS in a file [_proyecto/settings.py_](proyecto/settings.py):
 
 ```python
 # proyecto/settings.py
@@ -63,7 +63,7 @@ python manage.py migrate
 ```
 
 It will be created DB SQLite file in the main directory.
-You may learn a lot of things of DB with a help of the course https://programadorwebvalencia.com/cursos/sql/ <br>
+You may learn a lot of things of DB with a help of the [SQL course](https://programadorwebvalencia.com/cursos/sql/) <br>
 
 Let's create super user for control admin panel.
 

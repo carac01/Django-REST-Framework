@@ -1,7 +1,7 @@
 ### Tests
 
 Let's add pytest as an instrument for testing with Django configuration.
-We create the file _pytest.ini_ in a main dir of our project with the next content.
+We create the file [_pytest.ini_](pytest.ini) in a main dir of our project with the next content.
 
 ```commandline
 [pytest]
@@ -12,8 +12,8 @@ python_files = tests.py test_*.py *_tests.py
 ```
 
 For the current project, we are going to keep all our tests in one dir with tests divided with applications.
-Create a new directory inside _books_ folder with the name _tests_.
-Finally, inside _books_ create the file with the name _test_example.py_.
+Create a new directory inside _books_ folder with the name [_tests_](tests).
+Finally, inside _books_ create the file with the name [_test_example.py_](tests/books/test_example.py).
 
 ```commandline
 tests

@@ -7,7 +7,7 @@ the standard instrument for creating APIs with Django, and for the second, with 
 
 The minimal requirements are:
 * Install the latest version for Python3.
-* Text Editor. If you are just starting, recommend PyCharm Community Edition o VSCode with Python plugin.
+* Text Editor. If you are just starting, recommend [PyCharm Community Edition](https://www.jetbrains.com/products/compare/?product=pycharm&product=pycharm-ce) o [VSCode](https://code.visualstudio.com/download) with Python plugin.
 * Access to a terminal (which exists in PyCharm).
 
 The purposes which should be reached are fundamental for every API(examples):
@@ -143,7 +143,6 @@ curl https://example-of-crud-in-django-jrf.herokuapp.com/ping/
 {"ping": "pong!"}
 ```
 
-If you get lost on any step, do not hesitate to consult or download the code which was placed in GitHub repository:
-https://github.com/tanrax/example-of-crud-in-django-with-rest-framework
+If you get lost on any step, do not hesitate to consult or download the code which was placed in [GitHub repository](https://github.com/tanrax/example-of-crud-in-django-with-rest-framework)
 
 Are you ready? Let's begin!
