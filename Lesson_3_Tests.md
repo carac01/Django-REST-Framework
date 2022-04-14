@@ -1,7 +1,7 @@
 ### Tests
 
 Let's add pytest as an instrument for testing with Django configuration.
-We create the file [_pytest.ini_](pytest.ini) in a main dir of our project with the next content.
+We create the file [_pytest.ini_](https://docs.pytest.org/en/6.2.x/customize.html#pytest-ini) in a main dir of our project with the next [_content_](pytest.ini).
 
 ```commandline
 [pytest]

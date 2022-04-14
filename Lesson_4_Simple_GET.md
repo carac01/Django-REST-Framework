@@ -1,8 +1,8 @@
 ### Simple GET
 
 In the current lesson we will not use [Django REST Framework](https://www.django-rest-framework.org/), but _Django only_.
-Let's create the classic ping-pong to check that the service is alive.
-Realise the function [view](books/views.py) with response:
+Let's create the classic _ping-pong_ function to check that the service is alive.
+Realise the [view](books/views.py) with response:
 
 ```python
 # books/views.py
@@ -51,7 +51,7 @@ $ curl http://127.0.0.1:8000/ping/
 100    16  100    16    0     0   8000      0 --:--:-- --:--:-- --:--:--  8000{"ping": "pong"}
 ```
 
-At this moment create the new test. We create [test_ping.py](tests/books/test_ping.py):
+At this moment the new test is being created: [test_ping.py](tests/books/test_ping.py):
 
 ```commandline
 tests
@@ -80,7 +80,7 @@ def test_ping(client):
     assert content["ping"] == "pong"
 ```
 
-_client_ is the fixture that helps _pytest-django_ which represent the instance _django.test.Client_.
+_client_ is the fixture that helps _pytest-django_ which represents the instance _django.test.Client_.
 Basically this is the HTTP client which we are going to apply inside the tests.
 You already could run the test:
 
@@ -108,13 +108,11 @@ To make different tests, there is a good sample such as [Given-When-Then](https:
 The structure consists of 3 non-formal comments to distinguish the code by the logical blocks:
 
 1. _Given_: preconditions, some known state before the further system/code interactions. 
-   It could be manipulations with DB, set the time on specific environment other configurations.
+   It could be manipulations with DB, set the time on specific environment or other configurations.
    
-2. _When_: interactions with system/code described as steps of Test Cases. 
-    Also could be performed with _And_ comment.
+2. _When_: interactions with system/code. Also could be performed with _And_ comment.
    
-3. _Then_: outcome observations realised with assertions described as Expected result of Test Case 
-   which approve that the code/feature works as expected.
+3. _Then_: outcome observations which are realised with assertions to approve that the code works as expected.
    Could be performed with _And_ comment.
    
 In the previous code it would have the next form:
