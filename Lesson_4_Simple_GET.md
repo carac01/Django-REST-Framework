@@ -103,9 +103,9 @@ tests\books\test_ping.py .                                                      
 
 ```
 
-All tests were passed - great!
+All tests were passed - great! <br>
 To make different tests, there is a good sample such as [Given-When-Then](https://docs.behat.org/en/v2.5/guides/1.gherkin.html).
-The structure consists of 3 non-formal comments to distinguish the code by the logical blocks:
+It is related to BDD approach. The structure consists of 3 non-formal comments to distinguish the code by the logical blocks:
 
 1. _Given_: preconditions, some known state before the further system/code interactions. 
    It could be manipulations with DB, set the time on specific environment or other configurations.
@@ -137,3 +137,10 @@ def test_ping(client):
     assert content["ping"] == "pong"
 
 ```
+
+For Unit testing there is a common pattern - [3A: Arrange, Act, Assert](https://jamescooke.info/arrange-act-assert-pattern-for-python-developers.html): <br>
+1. _Arrange_: set up (arrange) the object before testing (mocks, fakes, or the real data).
+
+2. _Act_: act with the object.
+
+3. _Assert_: make checks.
