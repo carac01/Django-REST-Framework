@@ -100,3 +100,35 @@ Now the tests will be passed.
 pytest -k views
 ```
 
+The another possibility is to use the client HTTP like curl o [HTTPie](https://httpie.io/).
+```commandline
+# curl
+curl -XPOST -H "Content-type: application/json" -d '{
+	"title": "Real-time-Django",
+	"genre": "Technical",
+	"author": "Andros Fenollosa",
+	"year": 2022
+}' http://localhost:8000/books/
+
+# HTTPie
+http --json \
+POST http://localhost:8000/books/ \
+title="Real-time-Django" \
+genre="Technical" \
+author="Andros Fenollosa" \
+year=2022
+```
+
+And it will return:
+
+```commandline
+{
+   "id":1,
+   "title":"Real-time-Django",
+   "genre":"Technical",
+   "year":"2022",
+   "author":"Andros Fenollosa",
+   "created_at":"2022-04-16T22:05:29.616463Z",
+   "updated_at":"2022-04-16T22:05:29.616463Z"
+}
+```
