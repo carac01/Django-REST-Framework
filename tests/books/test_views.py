@@ -10,6 +10,13 @@ book_detail = {
         "year": 2022,
 }
 
+new_book_details = {
+            "title": "Rewind",
+            "genre": "Sci-Fi",
+            "author": "Andros Fenollosa",
+            "year": 2014,
+        }
+
 @pytest.mark.django_db
 def test_add_book(client):
     books = Books.objects.all()
@@ -99,3 +106,59 @@ def test_remove_invalid_book_id(client):
 
     resp = client.delete("/books/11/")
     assert resp.status_code == 404
+
+@pytest.mark.django_db
+def test_update_book(client):
+    book = Books.objects.create(
+        title=book_detail["title"],
+        genre=book_detail["genre"],
+        author=book_detail["author"],
+        year=book_detail["year"],
+    )
+
+    response = client.put(
+        f"/books/{book.id}/",
+        new_book_details,
+        content_type="application/json"
+    )
+
+    assert response.status_code == 200
+    assert response.data["title"] == new_book_details["title"]
+    assert response.data["genre"] == new_book_details["genre"]
+    assert response.data["author"] == new_book_details["author"]
+    assert response.data["year"] == new_book_details["year"]
+
+    response_detail = client.get(f"/books/{book.id}/")
+    assert response_detail.status_code == 200
+    assert response_detail.data["title"] == new_book_details["title"]
+    assert response_detail.data["genre"] == new_book_details["genre"]
+    assert response_detail.data["author"] == new_book_details["author"]
+    assert response_detail.data["year"] == new_book_details["year"]
+
+@pytest.mark.django_db
+def test_update_invalid_book_id(client):
+    response = client.put(
+        f"/books/i/",
+        new_book_details,
+        content_type="application/json"
+    )
+    assert response.status_code == 404
+
+@pytest.mark.django_db
+def test_update_invalid_book_json(client):
+    book = Books.objects.create(
+        title=book_detail["title"],
+        genre=book_detail["genre"],
+        author=book_detail["author"],
+        year=book_detail["year"],
+    )
+
+    resp = client.put(
+        f"/books/{book.id}/",
+        {
+            "country": "Italy",
+        },
+        content_type="application/json"
+    )
+
+    assert resp.status_code == 400
