@@ -41,7 +41,7 @@ def test_get_single_book(client):
 
 @pytest.mark.django_db
 def test_get_invalid_single_book_id(client):
-    resp = client.get(f"/books/-1/")
+    resp = client.get(f"/books/11/")
     assert resp.status_code == 404
 
 @pytest.mark.django_db
@@ -63,3 +63,39 @@ def test_get_all_books(client, faker):
     assert response.status_code == 200
     assert response.data[0] == book_1.title
     assert response.data[1] == book_2.title
+
+@pytest.mark.django_db
+def test_remove_book(client):
+
+    book = Books.objects.create(
+        title=book_detail["title"],
+        genre=book_detail["genre"],
+        author=book_detail["author"],
+        year=book_detail["year"],
+    )
+
+    response_detail = client.get(f"/books/{book.id}/")
+    assert response_detail.status_code == 200
+    assert response_detail.data["title"] == book_detail["title"]
+
+    response_delete = client.delete(f"/books/{book.id}/")
+    response_list = client.get("/books/")
+    response_new_detail = client.get(f"/books/{book.id}/")
+
+    assert response_delete.status_code == 200
+    assert response_delete.data["title"] == book_detail["title"]
+    assert response_list.status_code == 200
+    assert len(response_list.data) == 0
+    assert response_new_detail.status_code == 404
+
+@pytest.mark.django_db
+def test_remove_invalid_book_id(client):
+    book = Books.objects.create(
+        title=book_detail["title"],
+        genre=book_detail["genre"],
+        author=book_detail["author"],
+        year=book_detail["year"],
+    )
+
+    resp = client.delete("/books/11/")
+    assert resp.status_code == 404

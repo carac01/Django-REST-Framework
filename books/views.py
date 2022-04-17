@@ -33,3 +33,11 @@ class BookDetails(APIView):
             serializer = BookSerializer(book)
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(status=status.HTTP_404_NOT_FOUND)
+
+    def delete(self, request, pk):
+        book = Books.objects.filter(pk=pk).first()
+        if book:
+            serializer = BookSerializer(book)
+            book.delete()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_404_NOT_FOUND)

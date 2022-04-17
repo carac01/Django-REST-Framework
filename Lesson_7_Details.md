@@ -43,7 +43,7 @@ def test_get_single_book(client): # new
 def test_get_invalid_single_book_id(client): # new
 
     # When
-    resp = client.get(f"/books/-1/")
+    resp = client.get(f"/books/11/")
 
     # Then
     assert resp.status_code == 404
