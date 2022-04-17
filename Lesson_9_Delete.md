@@ -1,7 +1,7 @@
 ### Delete
 
 Now let's give the possibility to delete the book.
-We will edit the tests for views module to check that the book is removed as expected - 
+We will edit the [test_views](tests/books/test_views.py) for views module to check that the book is removed as expected - 
 and if we delete not existed book, we will get expected error code.
 
 ```python

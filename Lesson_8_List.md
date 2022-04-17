@@ -2,7 +2,7 @@
 
 Of course, we will need to loop all the books.
 Perform GET request where we will loop all the elements.
-And, as usual, let's create the test first.
+And, as usual, let's create the [test](tests/books/test_views.py) first.
 
 ```python
 # tests/books/test_views.py
