@@ -26,7 +26,7 @@ def test_add_book(client):
             "title": "Real-time-Django",
             "genre": "Technical",
             "author": "Andros Fenollosa",
-            "year": "2022",
+            "year": 2022,
         },
         content_type="application/json"
     )
@@ -126,7 +126,7 @@ And it will return:
    "id":1,
    "title":"Real-time-Django",
    "genre":"Technical",
-   "year":"2022",
+   "year":2022,
    "author":"Andros Fenollosa",
    "created_at":"2022-04-16T22:05:29.616463Z",
    "updated_at":"2022-04-16T22:05:29.616463Z"

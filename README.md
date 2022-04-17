@@ -12,8 +12,8 @@ The original text is under the [licenses](https://creativecommons.org/licenses/b
  3. [Testing](Lesson_3_Tests.md).
  4. [Simple GET](Lesson_4_Simple_GET.md).
  5. [Hello DRF](Lesson_5_Hello_DRF.md).
- 6. Create.
- 7. Details.
+ 6. [Create](Lesson_6_Create.md).
+ 7. [Details](Lesson_7_Details.md).
  8. List.
  9. Delete.
  10. Update.

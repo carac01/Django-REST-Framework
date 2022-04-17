@@ -27,7 +27,7 @@ def test_books_model():
     book = Books(
         title="Real-time-Django",
         genre="Technical",
-        year="2022",
+        year=2022,
         author="Andros Fenollosa",
     )
     book.save()
@@ -37,7 +37,7 @@ def test_books_model():
     ## Then
     assert book.title == "Real-time-Django"
     assert book.genre == "Technical"
-    assert book.year == "2022"
+    assert book.year == 2022
     assert book.author == "Andros Fenollosa"
     assert book.created_at
     assert book.updated_at
@@ -99,7 +99,7 @@ def test_valid_book_serializer():
     valid_serializer_data = {
         "title": "Holiday in the Wild",
         "genre": "comedy",
-        "year": "2019",
+        "year": 2o19,
         "author": "Neal Dobrofsky and Tippi Dobrofsky",
     }
     serializer = BookSerializer(data=valid_serializer_data)

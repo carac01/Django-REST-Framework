@@ -5,7 +5,7 @@ def test_valid_book_serializer():
     valid_serializer_data = {
         "title": "Holiday in the Wild",
         "genre": "comedy",
-        "year": "2019",
+        "year": 2019,
         "author": "Neal Dobrofsky and Tippi Dobrofsky",
     }
     serializer = BookSerializer(data=valid_serializer_data)
