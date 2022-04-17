@@ -81,8 +81,6 @@ The test will pass.
 You also could test with HTTP client what was received.
 (Do not forget to run the server and create the book).
 
-![img6.png](static/img6.png)
-
 ![img4.png](static/img4.png)
 
 ![img5.png](static/img5.png)

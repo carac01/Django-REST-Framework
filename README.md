@@ -14,7 +14,7 @@ The original text is under the [licenses](https://creativecommons.org/licenses/b
  5. [Hello DRF](Lesson_5_Hello_DRF.md).
  6. [Create](Lesson_6_Create.md).
  7. [Details](Lesson_7_Details.md).
- 8. List.
+ 8. [List](Lesson_8_List.md).
  9. Delete.
  10. Update.
  11. Flow.
