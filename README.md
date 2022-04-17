@@ -15,7 +15,7 @@ The original text is under the [licenses](https://creativecommons.org/licenses/b
  6. [Create](Lesson_6_Create.md).
  7. [Details](Lesson_7_Details.md).
  8. [List](Lesson_8_List.md).
- 9. Delete.
- 10. Update.
+ 9. [Delete](Lesson_9_Delete.md).
+ 10. [Update](Lesson_10_Updating.md).
  11. Flow.
  12. Final.
