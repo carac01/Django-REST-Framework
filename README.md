@@ -19,3 +19,5 @@ The original text is under the [licenses](https://creativecommons.org/licenses/b
  10. [Update](Lesson_10_Updating.md).
  11. [Flow](Lesson_11_Flow.md).
  12. [Final](Lesson_12_Final.md).
+
+Many thanks for the author of the course Andros Fenollosa.
